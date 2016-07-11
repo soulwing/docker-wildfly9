@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-oraclejdk8:cleaned
 
-ENV WILDFLY_VERSION=10.0.0.Final
+ENV WILDFLY_VERSION=9.0.2.Final
 
 ADD https://github.com/just-containers/s6-overlay/releases/download/v1.11.0.1/s6-overlay-amd64.tar.gz /tmp/
 ADD http://search.maven.org/remotecontent?filepath=org/wildfly/wildfly-dist/${WILDFLY_VERSION}/wildfly-dist-${WILDFLY_VERSION}.zip /tmp/wildfly.zip
